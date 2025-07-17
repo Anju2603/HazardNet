@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flood Risk Predictor</title>
+    <style>
+        body { font-family: Arial; padding: 30px; background: #f3faff; }
+        h1 { color: #0066cc; }
+        .box { padding: 20px; background: white; border-radius: 8px; width: 300px; margin-top: 20px; }
+        button { background-color: #007BFF; color: white; padding: 10px 15px; border: none; border-radius: 5px; }
+        input { padding: 10px; width: 90%; }
+    </style>
+</head>
+<body>
+    <h1>🌐 AI Flood Risk Predictor</h1>
+    <div class="box">
+        <form method="POST" action="/predict">
+            <label>Enter City:</label><br><br>
+            <input type="text" name="city" placeholder="e.g. Delhi" required><br><br>
+            <button type="submit">Check Risk</button>
+        </form>
+        <br>
+        {% if result %}
+            <h3>{{ result }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>

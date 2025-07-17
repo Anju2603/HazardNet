@@ -1,0 +1,11 @@
+Rainfall(mm),Humidity(%),Temp(degree C),Elevation(m),Risk
+80,90,26,200,High
+70,85,27,180,High
+50,80,30,220,Medium
+30,60,34,300,Low
+10,45,38,400,Low
+65,88,29,190,High
+45,75,32,250,Medium
+20,55,35,320,Low
+60,86,28,195,High
+35,65,33,280,Medium
